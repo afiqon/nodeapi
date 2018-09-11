@@ -8,11 +8,19 @@
     "client",
     "browser"
   ],
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "server": "nodemon main.js"
+  },
   "author": "hiysham",
   "contributors": [],
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
     "mysql": "^2.15.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
   }
 }
