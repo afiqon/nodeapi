@@ -4,7 +4,6 @@ var mysql = require('mysql');
 var state = {
     pool: null
 };
-var PORT = 1440;
 var HOST = 'localhost';
 var USER = 'root';
 var DB = 'eattendance';

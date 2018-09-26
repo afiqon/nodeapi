@@ -7,6 +7,12 @@ app.use(bodyParser.json());                                     // parse applica
 var PORT = 1440;
 const subjek = require('./routes/subjek');
 const login = require('./routes/login');
+const jadual = require('./routes/jadual');
+const bahagian = require('./routes/bahagian');
+const jawatan = require('./routes/jawatan');
+const pelajar = require('./routes/pelajar');
+const pengajar = require('./routes/Pengajar');
+const Sesi = require('./routes/Sesi');
 
 app.use(function (req, res, next) {
 
@@ -31,6 +37,18 @@ app.use(function (req, res, next) {
 app.use('/api', subjek);
 //Login
 app.use('api', login);
+//Jadual
+app.use('api', jadual);
+//Bahagian
+app.use('api', bahagian);
+//Jawatan
+app.use('api', jawatan);
+//Pelajar
+app.use('api', pelajar);
+//Pengajar
+app.use('api', pengajar);
+//Sesi
+app.use('api', Sesi);
 
 //find_user_by_id
 // app.get('/user_id', function (req, res) {
